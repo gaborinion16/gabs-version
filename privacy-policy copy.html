@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Gab's Version for Daymap</title>
+<style>
+  :root { --ink: #1d1d1f; --ink-2: #5f6368; --line: #e3e3e8; --page: #fbfbfd; --accent: #0a6fd8; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #f2f2f7; --ink-2: #a1a1a8; --line: #33343a; --page: #141416; --accent: #5aa9ff; } }
+  body { margin: 0; padding: 40px 16px 64px; font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; color: var(--ink); background: var(--page); }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { margin: 0 0 4px; font-size: 32px; line-height: 1.2; letter-spacing: -.02em; }
+  h2 { margin: 36px 0 8px; font-size: 20px; letter-spacing: -.01em; }
+  p, li { color: var(--ink); }
+  .sub { margin: 0 0 24px; color: var(--ink-2); }
+  .note { padding: 14px 16px; border: 1px solid var(--line); border-radius: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { padding: 10px 8px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; color: var(--ink-2); }
+  a { color: var(--accent); }
+  @media (max-width: 560px) { table, thead, tbody, tr, th, td { display: block; } thead { display: none; } td { padding: 2px 0; border: 0; } tr { padding: 10px 0; border-bottom: 1px solid var(--line); } td:first-child { font-weight: 600; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="sub">Gab's Version for Daymap · Last updated 14 November 2026</p>
+
+  <p class="note">Gab's Version for Daymap is an unofficial browser extension made by a student. It is not made by, endorsed by or connected to Daymap, Civica or any school.</p>
+
+  <h2>What the extension does</h2>
+  <p>It changes how Adelaide High School's Daymap website looks in your own browser, and adds extra features: notes, wallpapers, games, a chat feature and an AI helper. It only runs on <code>adelaidehs.daymap.net</code>. It reads the Daymap pages you open so it can redesign them. It never changes anything stored in Daymap.</p>
+
+  <h2>Kept only on your device</h2>
+  <p>These stay in your browser's storage and are never sent anywhere by the extension:</p>
+  <ul>
+    <li>Your notes, sticky notes and checklist</li>
+    <li>Wallpaper, colours and any photo you choose as a wallpaper</li>
+    <li>A copy of your teachers' names from your timetable, so they can show on the Today page</li>
+    <li>Daily Word progress, Focus Mode, your best game scores and times, and other settings</li>
+  </ul>
+  <p>Your grades, messages, tasks and other Daymap information are only read to show them on screen. They are never sent anywhere by the extension.</p>
+
+  <h2>Sent off your device</h2>
+  <p>Some features only work by sending information to an outside service. Each is only used if you choose to use that feature.</p>
+  <table>
+    <thead><tr><th>Feature</th><th>What is sent</th><th>Where it goes</th></tr></thead>
+    <tbody>
+      <tr><td>Game leaderboards (Snake, Blocks, Minesweeper, Block Breaker, Maze Chase and Go Karts)</td><td>Your first name and last initial, your score, and a random ID made by the extension. When a game starts, the extension asks the leaderboard for a game ID, and when it ends it sends your score so the server can check it was possible in the time played. Scores are sent automatically at the end of each game; you can turn this off from any game's Game Over screen.</td><td>A Supabase database run by the developer. Stored until deleted.</td></tr>
+      <tr><td>Online games (Tag, Pool, Capture the Flag and Go Karts)</td><td>Your first name and last initial, your character's colour and hat in Tag, your team in Capture the Flag, and your moves and items used during the game.</td><td>Passed through Supabase to the other players in your game. Not saved.</td></tr>
+      <tr><td>Donations (optional)</td><td>Nothing. The "Support Gab's Version" link just opens a Buy Me a Coffee page in a new tab. Any payment happens on Buy Me a Coffee's own website, under their privacy policy, and the extension never sees your name, email or payment details.</td><td>Not stored by the extension.</td></tr>
+      <tr><td>Announcements</td><td>Nothing is sent about you. About once a minute the extension asks the developer's Supabase database if there is a new announcement or maintenance message, and shows it if there is. It remembers on your device which ones you've already seen.</td><td>Read from a Supabase database run by the developer.</td></tr>
+      <tr><td>Chat</td><td>Your school email address, used to sign in with a one-time code. Your name, worked out from that email. Your friends, your group chats and the messages you send. When you were last on Daymap with the extension running, which your friends see as "Active now" or "Active 2h ago". When your add-on received and read each chat, which the people in that chat see as "Delivered" and "Read".</td><td>A Supabase database run by the developer. Messages are deleted after 7 days, unless someone in that chat turns this off, in which case that chat's messages are kept until it is turned back on. Your account and friends list stay until you ask for them to be removed. Only the people in a chat can read its messages.</td></tr>
+      <tr><td>Ask AI</td><td>The questions you type and the conversation so far. Your name and Daymap information are not included.</td><td>Free public AI services: LLM7 (llm7.io) and Pollinations (pollinations.ai). Their own privacy policies apply.</td></tr>
+      <tr><td>Bug Report &amp; Suggestions</td><td>What you type, plus the extension version, your browser and the Daymap page you were on.</td><td>Opens an email in your own email account. Nothing is sent unless you press Send there.</td></tr>
+    </tbody>
+  </table>
+  <p>Like any website, these services can see your internet address when your browser connects to them.</p>
+
+  <h2>What the developer never does</h2>
+  <ul>
+    <li>Sell or share your information with anyone</li>
+    <li>Show ads or track what you do</li>
+    <li>Collect analytics</li>
+    <li>Use your information for anything except making these features work</li>
+  </ul>
+
+  <h2>Other people can see</h2>
+  <p>In online games, Chat and on the game leaderboards, other people see your first name and last initial. People who search for you in Chat can see your full first and last name, so friends can find the right person. Your email address is never shown to other students. Anyone in a chat can screenshot what you write, so don't share private details.</p>
+
+  <h2>Keeping chat safe</h2>
+  <ul>
+    <li>Only people with an @schools.sa.edu.au email can use Chat, and you can only chat with people who accepted your friend request.</li>
+    <li>Friend suggestions only show people who share a friend or a group chat with you.</li>
+    <li>Swear words are hidden and slurs are blocked automatically.</li>
+    <li>Anyone can report a message. A report is an email to the developer from your own email account, and it includes the recent messages in that chat so the developer can see what happened.</li>
+    <li>The developer can block an account from Chat. To do that, the developer can see the names and school email addresses of Chat accounts, but cannot read chats they are not in unless a report shows the messages.</li>
+  </ul>
+
+  <h2>Students and parents</h2>
+  <p>This extension is made for high school students. If you are a parent or guardian and want your child's leaderboard entry removed, or have a question, please email the developer.</p>
+
+  <h2>Removing your information</h2>
+  <ul>
+    <li>Information on your device is removed when you uninstall the extension or clear your browser's site data for Daymap.</li>
+    <li>To remove your entry from a game leaderboard, email the developer.</li>
+    <li>Online games are not saved, so there is nothing to remove.</li>
+    <li>Chat messages delete themselves after 7 days unless a chat has turned this off. Turn it back on in the chat's People panel and older messages are deleted within the hour. To remove your Chat account and friends list, email the developer.</li>
+  </ul>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted here with a new date.</p>
+
+  <h2>Contact</h2>
+  <p>Email <a href="mailto:Gab.Orinion468@schools.sa.edu.au">Gab.Orinion468@schools.sa.edu.au</a>.</p>
+</main>
+</body>
+</html>
